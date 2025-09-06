@@ -1,0 +1,133 @@
+/* styles.css */
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Layout principal */
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 220px;
+    background: #ffffff;
+    border-right: 1px solid #ddd;
+  }
+  .sidebar ul {
+    list-style: none;
+  }
+  .sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .sidebar a span {
+    margin-left: 0.5rem;
+  }
+  .sidebar .sub-menu {
+    list-style: none;
+    padding-left: 2rem;
+  }
+  .sidebar .sub-menu a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Indicador de sección activa */
+  .sidebar a.active {
+    background: #e6f2ff;
+    color: #007acc;
+  }
+  
+  /* Contenido */
+  .content {
+    flex: 1;
+    padding: 2rem;
+    background: #f9f9f9;
+  }
+  .content-section {
+    display: none;
+  }
+  .content-section.active {
+    display: block;
+  }
+
+  /* Estilo para los id */
+  #chat-ia p{
+    padding-bottom: 20px;
+  }
+  
+   #chat-ia2 p{
+    padding-bottom: 20px;
+  }
+
+  /* Botón de cambio de tema */
+.theme-toggle {
+  margin: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #eee;
+  color: #222;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 999;
+}
+
+/* Tema oscuro: se aplica a body.dark-theme */
+body.dark-theme {
+  background: #222;
+  color: #eee;
+}
+
+body.dark-theme .sidebar {
+  background: #222;
+  border-right: 1px solid #444;
+}
+
+body.dark-theme .sidebar a {
+  color: #eee;
+}
+body.dark-theme .sidebar a.active {
+  background: #2a3750;
+  color: #6fc2ff;
+}
+body.dark-theme .content {
+  background: #23272f;
+  color: #eee;
+}
+body.dark-theme .theme-toggle {
+  background: #23272f;
+  color: #e7e7e7;
+  border: 1px solid #444;
+}
+
+
+  /* Responsive: sidebar colapsa arriba */
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+    .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+    }
+    .sidebar .sub-menu {
+      padding-left: 1.5rem;
+    }
+  }
+  
