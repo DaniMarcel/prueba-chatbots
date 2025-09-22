@@ -1,8 +1,114 @@
-<iframe 
-  src="https://aipoweredchatbot-production.up.railway.app/chatbot/68afa5a3eab729b4b332261a?key=Cd77oeXxlk7gEqHB7rXO6LZfLDL_Auqu-_A695452GulZKZ-wqOhim60GOtt6Y-s"
-  width="500" 
-  height="700"
-  frameborder="0" 
-  style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);"
-  title="Evaluacion AI Assistant">
-</iframe>
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi SPA de Instituto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Botón de tema, ponlo donde prefieras -->
+    <button id="toggle-theme" class="theme-toggle">🌙 Tema Oscuro</button>
+
+    <!-- Sidebar de navegación -->
+    <nav class="sidebar">
+      <ul>
+        <li>
+          <a href="#" data-target="inicio">
+            🏠 <span>Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-target="ramo-overview">
+            📚 <span>Ramo</span>
+          </a>
+          <ul class="sub-menu">
+            <li><a href="#" data-target="unidad-1">Unidad 1</a></li>
+            <li><a href="#" data-target="unidad-2">Unidad 2</a></li>
+            <li><a href="#" data-target="unidad-3">Unidad 3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" data-target="chat-ia">
+            💬 <span>Chatea con la IA</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-target="chat-ia2">
+            🧘 <span>Relajación y Spa</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Área de contenido -->
+    <main class="content">
+      <!-- Sección Inicio -->
+      <section id="inicio" class="content-section active">
+        <h2>Bienvenido</h2>
+        <p>Esta es la página de inicio de tu SPA de Instituto.</p>
+      </section>
+
+      <!-- Sección Ramo - overview -->
+      <section id="ramo-overview" class="content-section">
+        <h2>Ramo: Fundamentos de Programación</h2>
+        <p>Introducción general al ramo antes de entrar en unidades.</p>
+      </section>
+
+      <!-- Sección Unidad 1 -->
+      <section id="unidad-1" class="content-section">
+        <h2>Unidad 1: Variables y Tipos de Datos</h2>
+        <p>Contenido de la Unidad 1...</p>
+      </section>
+
+      <!-- Sección Unidad 2 -->
+      <section id="unidad-2" class="content-section">
+        <h2>Unidad 2: Estructuras de Control</h2>
+        <p>Contenido de la Unidad 2...</p>
+      </section>
+
+      <!-- Sección Unidad 3 -->
+      <section id="unidad-3" class="content-section">
+        <h2>Unidad 3: Funciones y Módulos</h2>
+        <p>Contenido de la Unidad 3...</p>
+      </section>
+
+      <!-- Sección Chat IA -->
+      <section id="chat-ia" class="content-section">
+        <h2>Modulo Evaluación</h2>
+        <div id="chatbot-container">
+          <p>Modulo Evaluación</p>
+          <iframe 
+            src="https://aipoweredchatbot-production.up.railway.app/chatbot/68d1694d375d7acbb68821ff?key=hhk1_ksIt5WuxeFsMxkhLMFvxeXbw0Y5Xq55Ro2vriyn34Z0ZjgqsDgJkCvGO63z&theme=light&primaryColor=3B82F6&showWelcome=true&showSources=true&showTyping=true&soundEnabled=false&rateLimit=10&user_id=[OPTIONAL_USER_ID]"
+            width="100%" 
+            height="800"
+            frameborder="0" 
+            style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);"
+            title="Evaluacion AI Assistant">
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Sección Chat IA 2-->
+      <section id="chat-ia2" class="content-section">
+        <h2>Relajación Terapéutica y Spa</h2>
+        <div id="chatbot-container2">
+          <p>Relajación Terapéutica y Spa</p>
+          <iframe 
+            src="https://aipoweredchatbot-production.up.railway.app/chatbot/68d167cf375d7acbb6882121?key=Mw78LzfcSZJoGUoD1BFdJc85yxFvbNZVhaAYd71jSnMXI-LnV-W6Id3VI4-KHEER&theme=light&primaryColor=3B82F6&showWelcome=true&showSources=true&showTyping=true&soundEnabled=false&rateLimit=10&user_id=[OPTIONAL_USER_ID]"
+            width="100%" 
+            height="800"
+            frameborder="0" 
+            style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);"
+            title="Relajacion Terapeutica y Spa AI Assistant">
+          </iframe>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
